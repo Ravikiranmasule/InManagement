@@ -1,17 +1,22 @@
 package com.luxtavern.dao;
 
 import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.luxtavern.entity.User;
 
-public interface LoginDao {
-	public User login(String userEmail,String userPassWord);
+@Repository
+public interface LoginDao extends JpaRepository<User,Long> {
+	public User findByUserEmailAndUserPassWord(String userEmail,String userPassWord);
 
-	public User getUserById(Long userId);
+	public Optional<User> findById(Long userId);
 
-	public String register(User user);
-	public Boolean userExists(String userEmail);
+	public User save(User user);
+	public User findByUserEmail(String email);
 
-	public List<User> getAllUser();
+	public List<User> findAll();
 
 }
