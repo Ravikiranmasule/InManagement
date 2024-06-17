@@ -5,18 +5,21 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.luxtavern.entity.User;
+import com.luxtavern.entity.Role;
+import com.luxtavern.entity.UserEntity;
 
 
 public interface LoginService {
 
 	public String login(String userEmail,String userPassWord);
 
-	public Optional<User> getUserById(Long userId);
+	public Optional<UserEntity> getUserById(Long userId);
 
-	public String register(User user);
+	public String register(UserEntity user);
 
-	public List<User> getAllUser();
+	public List<UserEntity> getAllUser();
+	
+	public String saveRole(Role role);
 	
 
 }

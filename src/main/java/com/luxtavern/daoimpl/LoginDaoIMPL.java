@@ -16,8 +16,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.luxtavern.dao.LoginDao;
-import com.luxtavern.entity.User;
+import com.luxtavern.entity.UserEntity;
 
 
 public class LoginDaoIMPL  {

@@ -21,12 +21,12 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.luxtavern.dao.LoginDao;
-import com.luxtavern.entity.User;
+import com.luxtavern.dao.UserRepository;
+import com.luxtavern.entity.UserEntity;
 import com.luxtavern.service.LoginService;
 
-@WebMvcTest(HomePageController.class)
-class HomePageControllerTest {
+@WebMvcTest(AuthController.class)
+class AuthControllerTest {
 	
 	@Autowired
 	MockMvc mockMvc;
@@ -36,18 +36,18 @@ class HomePageControllerTest {
 	
 	@MockBean
 	LoginService loginService;
-	LoginDao loginDao;
+	UserRepository userRepository;
 	SessionFactory sf;
 	
 	
 
-	private User user;
+	private UserEntity user;
 	
-	@BeforeEach
-	void setUp() {
-		user=new User(101L,"aniket@gmail.com","aniket@123");
-		Mockito.when(loginService.register(user)).thenReturn(user.toString());
-	}
+//	@BeforeEach
+//	void setUp() {
+//		user=new User(101L,"aniket@gmail.com","aniket@123");
+//		Mockito.when(loginService.register(user)).thenReturn(user.toString());
+//	}
 	
 //	@Test
 //	void testRegister() throws Exception {

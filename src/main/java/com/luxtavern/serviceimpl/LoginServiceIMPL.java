@@ -3,24 +3,32 @@ package com.luxtavern.serviceimpl;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
-import com.luxtavern.Exception.EmailIsInvalid;
-import com.luxtavern.Exception.InvalidCredentials;
-import com.luxtavern.Exception.PassWordIsInvalid;
-import com.luxtavern.Exception.UserNotExist;
-import com.luxtavern.dao.LoginDao;
-import com.luxtavern.entity.User;
+import com.luxtavern.Exception.EmailIsInvalidException;
+import com.luxtavern.Exception.InvalidCredentialsException;
+import com.luxtavern.Exception.PassWordIsInvalidException;
+import com.luxtavern.Exception.UserNotExistException;
+import com.luxtavern.dao.RoleRepository;
+import com.luxtavern.dao.UserRepository;
+import com.luxtavern.entity.Role;
+import com.luxtavern.entity.UserEntity;
 import com.luxtavern.service.LoginService;
 
 @Service
 public class LoginServiceIMPL implements LoginService {
 	
+	private static final Logger logger=LoggerFactory.getLogger(LoginServiceIMPL.class);
+	
 	@Autowired
-	LoginDao loginDao;
+	UserRepository userRepository;
+	@Autowired
+	RoleRepository roleRepository;
 	@Autowired
 	PasswordEncoder passwordEncoder;
 
@@ -30,14 +38,14 @@ public class LoginServiceIMPL implements LoginService {
 	
 
 	if(userEmail==null || userEmail.isEmpty()) {
-		throw new EmailIsInvalid("email is invalid");
+		throw new EmailIsInvalidException("email is invalid");
 		
 	}
 	else if(userPassWord==null || userPassWord.isEmpty())  {
-		throw new PassWordIsInvalid("Password is invalid");
+		throw new PassWordIsInvalidException("Password is invalid");
 		
 	}
-	User user1=loginDao.findByUserEmail(userEmail);
+	UserEntity user1=userRepository.findByUserEmail(userEmail);
 	System.out.println(user1);
 	
 	if(user1!=null)
@@ -46,15 +54,22 @@ public class LoginServiceIMPL implements LoginService {
 		{if(user1.getUserEmail().equals(userEmail)) {
 			 if(passwordEncoder.matches(userPassWord, user1.getUserPassWord())) {
 					msg="valid user";
+					logger.info("valid user");
+
 				}
 			 else {
-				 throw new PassWordIsInvalid("Password is invalid");
+				 logger.error("invalid password");
+
+				 throw new PassWordIsInvalidException("Password is invalid");
 			 }
 		}else {
-			throw new EmailIsInvalid("email is invalid");
+			logger.error("invalid email");
+
+			throw new EmailIsInvalidException("email is invalid");
 		}}
 	else {
-		throw new InvalidCredentials("invalid credentials");
+		logger.error("invalid credentials");
+		throw new InvalidCredentialsException("invalid credentials");
 	}
 		
 		
@@ -76,33 +91,58 @@ public class LoginServiceIMPL implements LoginService {
 	
 
 	@Override
-	public Optional<User> getUserById(Long userId) {
-		
-		return loginDao.findById(userId);
+	public Optional<UserEntity> getUserById(Long userId) {
+		logger.error("user is being fetch through id");
+
+		return userRepository.findById(userId);
 		
 	}
 	
 
 	@Override
-	public String register(User user) {
+	public String register(UserEntity user) {
 		String msg;
 		String emailFromUser=user.getUserEmail();
-		User user1=loginDao.findByUserEmail(emailFromUser);
+		UserEntity user1=userRepository.findByUserEmail(emailFromUser);
 		String encodedPassword= passwordEncoder.encode(user.getUserPassWord());
 		user.setUserPassWord(encodedPassword);
 		if(user1==null) {
-		User user2=loginDao.save(user);
+		UserEntity user2=userRepository.save(user);
+		logger.info("user is getting saved");
+
 		msg="ok";}
 		else {
+			logger.warn("conflict of user happend");
+
 			msg="conflict";
 		}
 		return msg;
 	}
 
 	@Override
-	public List<User> getAllUser() {
-List<User> list=loginDao.findAll();		
+	public List<UserEntity> getAllUser() {
+List<UserEntity> list=userRepository.findAll();		
+logger.info("returning list of user");
+
 return list;
+	}
+	
+	public String saveRole(Role role) {
+		String msg;
+		Role role1 = null;
+		Boolean isRoleExist=roleRepository.existsByRoleName(role.getRoleName());
+		if(!isRoleExist) {
+		 role1=roleRepository.save(role);}
+		else {
+			msg="conflict";
+		}
+		if(role1==null) {
+			msg="fail";
+		//	throw new FailedToSaveRole(" failed to save role");
+		}else {
+			msg="success";
+		}
+		return msg;
 	}
 	
 }
