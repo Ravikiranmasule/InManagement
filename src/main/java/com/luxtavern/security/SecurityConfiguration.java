@@ -41,6 +41,9 @@ public class SecurityConfiguration {
 		    .authorizeRequests()
 		    .antMatchers("/").permitAll()
 		    .antMatchers("/api/auth/**").permitAll()
+		    .antMatchers("/api/admin/**").permitAll()
+		    .antMatchers("/api/email/**").permitAll()
+		    .antMatchers("/api/photo/**").permitAll()
 		    .anyRequest().authenticated()
 		    .and()
 		    .httpBasic();

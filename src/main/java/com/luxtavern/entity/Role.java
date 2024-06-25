@@ -11,6 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Role implements Serializable{
 	
@@ -22,6 +25,7 @@ public class Role implements Serializable{
 	private String roleName;
 
 	@ManyToMany(mappedBy ="roles")
+	 @JsonIgnore
 	 private List<UserEntity> users=new ArrayList<>();
 
 	public Long getRoleId() {

@@ -93,40 +93,5 @@ public class AuthController {
 		return new ResponseEntity<AuthResponseDTO>(new AuthResponseDTO(token), HttpStatus.OK);
 	}
 	
-	@GetMapping("/userbyid/{userId}")
-public Optional<UserEntity> getUserById(@PathVariable Long userId) 
-	{
-		Optional<UserEntity> user=loginService.getUserById(userId);
-		if(!user.isPresent()) {
-			System.out.println("null user");
-			throw new UserNotFoundException("user not found");
-		}else {
-		return user;
-		
-		}
 	
-
-}
-	@GetMapping("/getalluser")
-	public ResponseEntity<List<UserEntity>> getAllUser(){
-		List<UserEntity> list=loginService.getAllUser();
-		return new  ResponseEntity<List<UserEntity> >(list,HttpStatus.FOUND);
-	}
-	
-	@PostMapping("/saveRole")
-	public ResponseEntity<String> saveRole(@RequestBody Role role) {
-		String msg1=null;
-		String msg=loginService.saveRole(role);
-		if(msg.equals("fail")) {
-			throw new FailedToSaveRoleException("failed to save role");
-			
-		}else if(msg.equals("conflict")) {
-			throw new RoleAlreadyPresentException(" role already present in database");
-		}
-		else {
-			msg1="Role successfully saved";
-			return new ResponseEntity<String>(msg1,HttpStatus.CREATED);
-		}
-		
-	}
 }
