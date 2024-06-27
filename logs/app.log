@@ -2300,3 +2300,837 @@ org.springframework.util.InvalidMimeTypeException: Invalid mime type "null": 'mi
 2024-06-27 13:47:07.757 [Thread-114] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-27 13:47:07.860 [Thread-114] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-30 - Shutdown initiated...
 2024-06-27 13:47:07.866 [Thread-114] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-30 - Shutdown completed.
+2024-06-27 13:47:08.029 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 13:47:08.029 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 13:47:08.029 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 13:47:08.640 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 13:47:08.652 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2024-06-27 13:47:08.777 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 13:47:08.777 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 13:47:08.777 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 13:47:08.778 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 13:47:08.798 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 13:47:08.799 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 768 ms
+2024-06-27 13:47:08.826 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 13:47:08.830 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-31 - Starting...
+2024-06-27 13:47:08.848 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-31 - Start completed.
+2024-06-27 13:47:08.849 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 13:47:08.910 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 13:47:08.910 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 13:47:08.964 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 13:47:09.097 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 13:47:09.121 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 13:47:09.132 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d02fd72, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a975d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@436ad2f3, org.springframework.security.web.header.HeaderWriterFilter@60baab35, org.springframework.security.web.authentication.logout.LogoutFilter@29dceabd, com.luxtavern.security.JWTAuthenticationFilter@2da6135a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f84b056, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ae3d5c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fb524a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@502b58f2, org.springframework.security.web.session.SessionManagementFilter@3cd5735b, org.springframework.security.web.access.ExceptionTranslationFilter@2ffcc783, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72d4a02b]
+2024-06-27 13:47:09.151 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 13:47:09.205 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 13:47:09.207 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 13:47:09.208 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 13:47:09.209 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 13:47:09.211 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 13:47:09.274 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.313 seconds (JVM running for 17858.089)
+2024-06-27 13:47:09.275 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 13:47:11.216 [http-nio-9090-exec-5] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 13:47:11.216 [http-nio-9090-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 13:47:11.217 [http-nio-9090-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-27 14:40:31.127 [HikariPool-31 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-31 - Thread starvation or clock leap detected (housekeeper delta=2m21s365ms135µs400ns).
+2024-06-27 16:34:02.077 [Thread-118] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:34:02.108 [Thread-118] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-31 - Shutdown initiated...
+2024-06-27 16:34:02.116 [Thread-118] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-31 - Shutdown completed.
+2024-06-27 16:34:02.593 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:34:02.593 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:34:02.593 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:34:03.653 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:34:03.668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:34:03.886 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:34:03.886 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:34:03.887 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:34:03.887 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:34:03.928 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:34:03.928 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1332 ms
+2024-06-27 16:34:03.962 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:34:03.965 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-32 - Starting...
+2024-06-27 16:34:03.983 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-32 - Start completed.
+2024-06-27 16:34:03.984 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:34:04.123 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:34:04.123 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:34:04.204 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:34:04.364 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:34:04.412 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:34:04.432 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45d98c8f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@139137f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@77a3a6d1, org.springframework.security.web.header.HeaderWriterFilter@56b0fa99, org.springframework.security.web.authentication.logout.LogoutFilter@7cf32409, com.luxtavern.security.JWTAuthenticationFilter@18a384e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25bb0f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f7bfc89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e4ea9cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dce75df, org.springframework.security.web.session.SessionManagementFilter@13e17c8c, org.springframework.security.web.access.ExceptionTranslationFilter@7d92a448, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12c9991b]
+2024-06-27 16:34:04.459 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:34:04.538 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:34:04.541 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:34:04.542 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:34:04.543 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:34:04.550 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:34:04.615 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 2.158 seconds (JVM running for 27873.43)
+2024-06-27 16:34:04.617 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:34:55.926 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:34:55.927 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:34:55.931 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-27 16:34:55.941 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:34:55.981 [http-nio-9090-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.luxtavern.dao.CategoryRepository.findAll()" because "this.categoryRepository" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.luxtavern.dao.CategoryRepository.findAll()" because "this.categoryRepository" is null
+	at com.luxtavern.serviceimpl.PdfServiceIMPL.createPdf(PdfServiceIMPL.java:37)
+	at com.luxtavern.controller.PdfController.createPdf(PdfController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.luxtavern.security.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-27 16:36:03.149 [Thread-122] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:36:03.151 [Thread-122] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-32 - Shutdown initiated...
+2024-06-27 16:36:03.159 [Thread-122] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-32 - Shutdown completed.
+2024-06-27 16:36:03.281 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:36:03.281 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:36:03.281 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:36:03.539 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:36:03.557 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:36:03.705 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:36:03.707 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:36:03.707 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:36:03.707 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:36:03.741 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:36:03.793 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 508 ms
+2024-06-27 16:36:03.846 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:36:03.850 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-33 - Starting...
+2024-06-27 16:36:03.887 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-33 - Start completed.
+2024-06-27 16:36:03.887 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:36:03.977 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:36:03.978 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:36:04.038 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:36:04.202 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:36:04.222 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:36:04.232 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b1578, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ff218a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cea90df, org.springframework.security.web.header.HeaderWriterFilter@500ead15, org.springframework.security.web.authentication.logout.LogoutFilter@2a84a34f, com.luxtavern.security.JWTAuthenticationFilter@4b0d0f10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4079c0d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52fe2f98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77bd56d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15843943, org.springframework.security.web.session.SessionManagementFilter@5f434977, org.springframework.security.web.access.ExceptionTranslationFilter@76ed0ce6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3acc1c01]
+2024-06-27 16:36:04.250 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:36:04.319 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:36:04.324 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:36:04.324 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:36:04.325 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:36:04.328 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:36:04.428 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.18 seconds (JVM running for 27993.243)
+2024-06-27 16:36:04.429 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:36:07.631 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:36:07.631 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:36:07.632 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-27 16:36:07.634 [http-nio-9090-exec-2] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:37:00.303 [Thread-126] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:37:00.304 [Thread-126] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-33 - Shutdown initiated...
+2024-06-27 16:37:00.312 [Thread-126] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-33 - Shutdown completed.
+2024-06-27 16:37:00.418 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:37:00.418 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:37:00.418 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:37:00.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:37:00.589 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:37:00.700 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:37:00.700 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:37:00.700 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:37:00.700 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:37:00.725 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:37:00.725 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+2024-06-27 16:37:00.749 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:37:00.751 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Starting...
+2024-06-27 16:37:00.767 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Start completed.
+2024-06-27 16:37:00.767 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:37:00.819 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:37:00.819 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:37:00.867 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:37:01.005 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:37:01.025 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:37:01.037 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4168f372, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14c50d67, org.springframework.security.web.context.SecurityContextPersistenceFilter@529959b6, org.springframework.security.web.header.HeaderWriterFilter@433b2a4a, org.springframework.security.web.authentication.logout.LogoutFilter@6447d727, com.luxtavern.security.JWTAuthenticationFilter@5b15c708, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40920087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fb28c05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35419ac3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bd0af90, org.springframework.security.web.session.SessionManagementFilter@6c54baf8, org.springframework.security.web.access.ExceptionTranslationFilter@135dc169, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f880245]
+2024-06-27 16:37:01.054 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:37:01.099 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:37:01.102 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:37:01.103 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:37:01.103 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:37:01.108 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:37:01.193 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.803 seconds (JVM running for 28050.007)
+2024-06-27 16:37:01.195 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:37:09.746 [Thread-130] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:37:09.746 [Thread-130] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown initiated...
+2024-06-27 16:37:09.751 [Thread-130] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown completed.
+2024-06-27 16:37:09.867 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:37:09.867 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:37:09.867 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:37:10.043 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:37:10.058 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:37:10.172 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:37:10.172 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:37:10.172 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:37:10.173 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:37:10.195 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:37:10.195 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 325 ms
+2024-06-27 16:37:10.222 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:37:10.225 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Starting...
+2024-06-27 16:37:10.243 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Start completed.
+2024-06-27 16:37:10.243 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:37:10.313 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:37:10.313 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:37:10.381 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:37:10.506 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:37:10.528 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:37:10.544 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@171a8eae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1127f13, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f617ab2, org.springframework.security.web.header.HeaderWriterFilter@47f5cff3, org.springframework.security.web.authentication.logout.LogoutFilter@519c31c3, com.luxtavern.security.JWTAuthenticationFilter@60b82c7d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ccf97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cf016a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6513da9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@429022b6, org.springframework.security.web.session.SessionManagementFilter@139a72ba, org.springframework.security.web.access.ExceptionTranslationFilter@3ca9e96f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d61d40b]
+2024-06-27 16:37:10.565 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:37:10.619 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:37:10.622 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:37:10.623 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:37:10.623 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:37:10.627 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:37:10.685 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.849 seconds (JVM running for 28059.5)
+2024-06-27 16:37:10.687 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:37:15.995 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:37:15.996 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:37:15.998 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:37:15.999 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:38:31.998 [Thread-134] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:38:32.000 [Thread-134] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown initiated...
+2024-06-27 16:38:32.008 [Thread-134] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown completed.
+2024-06-27 16:38:32.150 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:38:32.151 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:38:32.151 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:38:32.377 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:38:32.392 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:38:32.501 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:38:32.502 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:38:32.502 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:38:32.502 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:38:32.524 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:38:32.524 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 369 ms
+2024-06-27 16:38:32.547 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:38:32.550 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Starting...
+2024-06-27 16:38:32.569 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Start completed.
+2024-06-27 16:38:32.570 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:38:32.623 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:38:32.623 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:38:32.664 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:38:32.811 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:38:32.831 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:38:32.842 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58da3e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fef394d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a17a7fc, org.springframework.security.web.header.HeaderWriterFilter@d414417, org.springframework.security.web.authentication.logout.LogoutFilter@160f7dd2, com.luxtavern.security.JWTAuthenticationFilter@6bd80cda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f6a3ddf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26dfa58e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21b93cbe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4829dcf2, org.springframework.security.web.session.SessionManagementFilter@2de3a945, org.springframework.security.web.access.ExceptionTranslationFilter@621fc971, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1168df35]
+2024-06-27 16:38:32.859 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:38:32.914 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:38:32.916 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:38:32.917 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:38:32.918 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:38:32.921 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:38:32.985 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.879 seconds (JVM running for 28141.799)
+2024-06-27 16:38:32.988 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:38:35.310 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:38:35.310 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:38:35.312 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:38:35.314 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:39:52.010 [Thread-138] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:39:52.011 [Thread-138] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown initiated...
+2024-06-27 16:39:52.022 [Thread-138] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown completed.
+2024-06-27 16:39:52.147 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:39:52.147 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:39:52.147 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:39:52.336 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:39:52.352 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:39:52.461 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:39:52.461 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:39:52.462 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:39:52.462 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:39:52.480 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:39:52.481 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 327 ms
+2024-06-27 16:39:52.508 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:39:52.512 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Starting...
+2024-06-27 16:39:52.530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Start completed.
+2024-06-27 16:39:52.531 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:39:52.590 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:39:52.590 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:39:52.646 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:39:52.806 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:39:52.830 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:39:52.841 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1cf71691, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b43c10c, org.springframework.security.web.context.SecurityContextPersistenceFilter@74f2bd90, org.springframework.security.web.header.HeaderWriterFilter@26ca22b4, org.springframework.security.web.authentication.logout.LogoutFilter@70ab448b, com.luxtavern.security.JWTAuthenticationFilter@330dc24a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@258531c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@455c2250, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32f467cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@499c589e, org.springframework.security.web.session.SessionManagementFilter@793b5718, org.springframework.security.web.access.ExceptionTranslationFilter@596d1e40, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d75e103]
+2024-06-27 16:39:52.859 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:39:52.932 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:39:52.935 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:39:52.935 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:39:52.936 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:39:52.938 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:39:52.990 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.879 seconds (JVM running for 28221.806)
+2024-06-27 16:39:52.993 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:39:53.258 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:39:53.258 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:39:53.261 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-27 16:39:53.264 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:40:53.895 [Thread-142] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:40:53.895 [Thread-142] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown initiated...
+2024-06-27 16:40:53.902 [Thread-142] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown completed.
+2024-06-27 16:40:54.021 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:40:54.021 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:40:54.021 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:40:54.228 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:40:54.244 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:40:54.362 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:40:54.362 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:40:54.363 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:40:54.363 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:40:54.389 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:40:54.389 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 364 ms
+2024-06-27 16:40:54.438 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:40:54.451 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Starting...
+2024-06-27 16:40:54.481 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Start completed.
+2024-06-27 16:40:54.482 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:40:54.624 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:40:54.625 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:40:54.740 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:40:54.926 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:40:54.948 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:40:54.962 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bbea8b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b874488, org.springframework.security.web.context.SecurityContextPersistenceFilter@5faba00e, org.springframework.security.web.header.HeaderWriterFilter@769db1b4, org.springframework.security.web.authentication.logout.LogoutFilter@7d0e87dc, com.luxtavern.security.JWTAuthenticationFilter@553dc50f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@8fa12b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f76e4fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24fde2b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39b251e4, org.springframework.security.web.session.SessionManagementFilter@61674ccb, org.springframework.security.web.access.ExceptionTranslationFilter@322a52f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35dcf773]
+2024-06-27 16:40:54.980 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:40:55.036 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:40:55.040 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:40:55.041 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:40:55.041 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:40:55.045 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:40:55.114 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.135 seconds (JVM running for 28283.928)
+2024-06-27 16:40:55.115 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:40:56.681 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:40:56.682 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:40:56.684 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:40:56.685 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:41:48.897 [Thread-146] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:41:48.898 [Thread-146] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown initiated...
+2024-06-27 16:41:48.906 [Thread-146] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown completed.
+2024-06-27 16:41:49.040 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:41:49.040 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:41:49.040 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:41:49.209 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:41:49.223 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:41:49.335 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:41:49.335 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:41:49.336 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:41:49.336 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:41:49.354 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:41:49.354 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 311 ms
+2024-06-27 16:41:49.382 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:41:49.386 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Starting...
+2024-06-27 16:41:49.402 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Start completed.
+2024-06-27 16:41:49.402 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:41:49.467 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:41:49.467 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:41:49.537 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:41:49.807 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:41:49.847 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:41:49.860 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@af8a22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32b9577d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f374be6, org.springframework.security.web.header.HeaderWriterFilter@68080af9, org.springframework.security.web.authentication.logout.LogoutFilter@8c563fd, com.luxtavern.security.JWTAuthenticationFilter@3cd95e17, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64a407b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e55b4e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66223019, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@653de51b, org.springframework.security.web.session.SessionManagementFilter@1f5496a4, org.springframework.security.web.access.ExceptionTranslationFilter@4e0df9d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1969d756]
+2024-06-27 16:41:49.891 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:41:49.963 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:41:49.966 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:41:49.968 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:41:49.969 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:41:49.972 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:41:50.035 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.046 seconds (JVM running for 28338.85)
+2024-06-27 16:41:50.037 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:41:51.246 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:41:51.247 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:41:51.248 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-27 16:41:51.250 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:42:10.936 [Thread-150] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:10.936 [Thread-150] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown initiated...
+2024-06-27 16:42:10.945 [Thread-150] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown completed.
+2024-06-27 16:42:11.062 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:42:11.062 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:42:11.062 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:42:11.264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:42:11.279 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:42:11.393 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:42:11.393 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:11.393 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:42:11.394 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:42:11.419 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:42:11.419 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 353 ms
+2024-06-27 16:42:11.448 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:42:11.452 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Starting...
+2024-06-27 16:42:11.469 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Start completed.
+2024-06-27 16:42:11.469 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:42:11.517 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:42:11.517 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:11.568 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:42:11.705 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:42:11.724 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:42:11.733 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@729e40fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e53bef0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f2e6012, org.springframework.security.web.header.HeaderWriterFilter@13e5a87f, org.springframework.security.web.authentication.logout.LogoutFilter@5fb34bfb, com.luxtavern.security.JWTAuthenticationFilter@6b4c9df7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@44555375, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2506640f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b1e8680, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c85ac94, org.springframework.security.web.session.SessionManagementFilter@135d7355, org.springframework.security.web.access.ExceptionTranslationFilter@317b7737, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9d979af]
+2024-06-27 16:42:11.749 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:42:11.835 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:11.840 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:42:11.841 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:42:11.842 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:42:11.846 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:42:11.924 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.892 seconds (JVM running for 28360.739)
+2024-06-27 16:42:11.925 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:42:22.545 [Thread-154] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:22.546 [Thread-154] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown initiated...
+2024-06-27 16:42:22.555 [Thread-154] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown completed.
+2024-06-27 16:42:22.674 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:42:22.674 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:42:22.674 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:42:22.879 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:42:22.899 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:42:23.061 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:42:23.062 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:23.062 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:42:23.062 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:42:23.087 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:42:23.087 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 411 ms
+2024-06-27 16:42:23.114 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:42:23.117 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Starting...
+2024-06-27 16:42:23.131 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Start completed.
+2024-06-27 16:42:23.132 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:42:23.178 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:42:23.178 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:23.228 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:42:23.404 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:42:23.429 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:42:23.443 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e98c5ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3622174a, org.springframework.security.web.context.SecurityContextPersistenceFilter@f489890, org.springframework.security.web.header.HeaderWriterFilter@30e95732, org.springframework.security.web.authentication.logout.LogoutFilter@4ab08177, com.luxtavern.security.JWTAuthenticationFilter@3eae57, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@423180a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a21f053, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@208b7ce2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2387743e, org.springframework.security.web.session.SessionManagementFilter@68d92092, org.springframework.security.web.access.ExceptionTranslationFilter@4cd32dff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6edf7de5]
+2024-06-27 16:42:23.463 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:42:23.529 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:23.532 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:42:23.532 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:42:23.533 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:42:23.535 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:42:23.599 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.951 seconds (JVM running for 28372.413)
+2024-06-27 16:42:23.600 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:42:24.798 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:42:24.798 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:42:24.800 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:42:24.802 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:42:26.948 [http-nio-9090-exec-2] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:42:38.336 [Thread-158] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:38.337 [Thread-158] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown initiated...
+2024-06-27 16:42:38.341 [Thread-158] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown completed.
+2024-06-27 16:42:38.458 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:42:38.458 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:42:38.458 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:42:38.631 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:42:38.643 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:42:38.734 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:42:38.735 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:38.735 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:42:38.735 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:42:38.760 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:42:38.760 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 299 ms
+2024-06-27 16:42:38.785 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:42:38.789 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Starting...
+2024-06-27 16:42:38.803 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Start completed.
+2024-06-27 16:42:38.804 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:42:38.859 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:42:38.859 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:42:38.905 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:42:39.053 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:42:39.075 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:42:39.086 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@255e8f59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f29609a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b111e20, org.springframework.security.web.header.HeaderWriterFilter@bc6965e, org.springframework.security.web.authentication.logout.LogoutFilter@672fdf2d, com.luxtavern.security.JWTAuthenticationFilter@4b645fb4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@313c3587, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51e15692, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eaa4e96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b2b98a3, org.springframework.security.web.session.SessionManagementFilter@688a5ccb, org.springframework.security.web.access.ExceptionTranslationFilter@5d76ed95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39fdb561]
+2024-06-27 16:42:39.108 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:42:39.155 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:42:39.159 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:42:39.160 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:42:39.161 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:42:39.163 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:42:39.223 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.804 seconds (JVM running for 28388.038)
+2024-06-27 16:42:39.225 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:42:43.094 [http-nio-9090-exec-3] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:42:43.094 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:42:43.096 [http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:42:43.099 [http-nio-9090-exec-3] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of pdfimpl
+2024-06-27 16:44:57.209 [Thread-162] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:44:57.210 [Thread-162] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown initiated...
+2024-06-27 16:44:57.220 [Thread-162] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown completed.
+2024-06-27 16:44:57.327 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:44:57.327 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:44:57.327 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:44:57.501 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:44:57.520 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:44:57.639 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:44:57.640 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:44:57.640 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:44:57.640 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:44:57.670 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:44:57.670 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 341 ms
+2024-06-27 16:44:57.692 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:44:57.695 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Starting...
+2024-06-27 16:44:57.714 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Start completed.
+2024-06-27 16:44:57.714 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:44:57.764 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:44:57.764 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:44:57.817 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:44:57.957 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:44:57.982 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:44:57.996 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31e6e601, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a6f2db0, org.springframework.security.web.context.SecurityContextPersistenceFilter@49c5d021, org.springframework.security.web.header.HeaderWriterFilter@4a3ff5cb, org.springframework.security.web.authentication.logout.LogoutFilter@563aef47, com.luxtavern.security.JWTAuthenticationFilter@503f40df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@205c8b0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7db65137, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@489262e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4195976c, org.springframework.security.web.session.SessionManagementFilter@6f12cc14, org.springframework.security.web.access.ExceptionTranslationFilter@527cd771, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1523ca43]
+2024-06-27 16:44:58.012 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:44:58.059 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:44:58.062 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:44:58.113 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:44:58.114 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:44:58.121 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:44:58.228 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.925 seconds (JVM running for 28527.043)
+2024-06-27 16:44:58.229 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:45:04.924 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:45:04.925 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:45:04.928 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-27 16:45:04.931 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:49:44.812 [Thread-166] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:49:44.813 [Thread-166] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown initiated...
+2024-06-27 16:49:44.818 [Thread-166] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown completed.
+2024-06-27 16:49:44.950 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:49:44.950 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:49:44.950 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:49:45.186 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:49:45.200 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:49:45.329 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:49:45.329 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:49:45.329 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:49:45.329 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:49:45.359 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:49:45.359 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 405 ms
+2024-06-27 16:49:45.390 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:49:45.394 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Starting...
+2024-06-27 16:49:45.411 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Start completed.
+2024-06-27 16:49:45.411 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:49:45.469 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:49:45.469 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:49:45.529 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:49:45.669 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:49:45.695 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:49:45.709 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c06a148, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4efd431b, org.springframework.security.web.context.SecurityContextPersistenceFilter@587207f0, org.springframework.security.web.header.HeaderWriterFilter@1dc532eb, org.springframework.security.web.authentication.logout.LogoutFilter@1be33d97, com.luxtavern.security.JWTAuthenticationFilter@6fdd90b3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@709a265, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43954c52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77f36ca1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@332a2719, org.springframework.security.web.session.SessionManagementFilter@ec871d0, org.springframework.security.web.access.ExceptionTranslationFilter@5e98bc90, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6992870a]
+2024-06-27 16:49:45.753 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:49:45.820 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:49:45.825 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:49:45.826 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:49:45.826 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:49:45.829 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:49:45.888 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.983 seconds (JVM running for 28814.703)
+2024-06-27 16:49:45.890 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:49:51.030 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:49:51.030 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:49:51.032 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:49:51.034 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:50:01.670 [Thread-170] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:50:01.671 [Thread-170] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown initiated...
+2024-06-27 16:50:01.679 [Thread-170] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown completed.
+2024-06-27 16:50:01.801 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:50:01.802 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:50:01.802 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:50:01.966 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:50:01.984 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:50:02.163 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:50:02.164 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:50:02.164 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:50:02.164 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:50:02.187 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:50:02.188 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 383 ms
+2024-06-27 16:50:02.219 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:50:02.224 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Starting...
+2024-06-27 16:50:02.237 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Start completed.
+2024-06-27 16:50:02.237 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:50:02.278 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:50:02.279 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:50:02.328 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:50:02.505 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:50:02.529 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:50:02.543 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44f9fd1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34e86ed8, org.springframework.security.web.context.SecurityContextPersistenceFilter@15f51e4b, org.springframework.security.web.header.HeaderWriterFilter@7cdb3159, org.springframework.security.web.authentication.logout.LogoutFilter@81afe86, com.luxtavern.security.JWTAuthenticationFilter@29a38d07, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5cc74144, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61aa6a84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445ece11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d0a5f85, org.springframework.security.web.session.SessionManagementFilter@1b4d5855, org.springframework.security.web.access.ExceptionTranslationFilter@65c23d2c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@693a1c3c]
+2024-06-27 16:50:02.565 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:50:02.637 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:50:02.639 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:50:02.640 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:50:02.640 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:50:02.643 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:50:02.713 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.945 seconds (JVM running for 28831.528)
+2024-06-27 16:50:02.715 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:50:07.140 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:50:07.140 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:50:07.141 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-27 16:50:07.143 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:52:56.741 [Thread-174] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:52:56.741 [Thread-174] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Shutdown initiated...
+2024-06-27 16:52:56.747 [Thread-174] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-45 - Shutdown completed.
+2024-06-27 16:52:56.868 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:52:56.868 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:52:56.868 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:52:57.062 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:52:57.076 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:52:57.204 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:52:57.204 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:52:57.204 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:52:57.204 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:52:57.223 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:52:57.223 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 351 ms
+2024-06-27 16:52:57.253 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:52:57.258 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-46 - Starting...
+2024-06-27 16:52:57.274 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-46 - Start completed.
+2024-06-27 16:52:57.275 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:52:57.328 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:52:57.328 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:52:57.390 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:52:57.535 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:52:57.560 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:52:57.570 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7aa6310e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f2e5d4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5351b96d, org.springframework.security.web.header.HeaderWriterFilter@4fbff05d, org.springframework.security.web.authentication.logout.LogoutFilter@69d55a2b, com.luxtavern.security.JWTAuthenticationFilter@20680f49, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e50d078, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f856a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49f56cd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15782600, org.springframework.security.web.session.SessionManagementFilter@218c9b7e, org.springframework.security.web.access.ExceptionTranslationFilter@735b6d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c3cdc0f]
+2024-06-27 16:52:57.594 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:52:57.660 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:52:57.664 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:52:57.665 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:52:57.665 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:52:57.668 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:52:57.742 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 0.907 seconds (JVM running for 29006.557)
+2024-06-27 16:52:57.743 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:53:02.479 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:53:02.479 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:53:02.482 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-27 16:53:02.484 [http-nio-9090-exec-1] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:53:04.718 [http-nio-9090-exec-7] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:53:06.303 [http-nio-9090-exec-8] INFO  c.l.serviceimpl.PdfServiceIMPL - in create pdf method of PdfServiceIMPL
+2024-06-27 16:57:40.606 [Thread-178] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:57:40.607 [Thread-178] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-46 - Shutdown initiated...
+2024-06-27 16:57:40.614 [Thread-178] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-46 - Shutdown completed.
+2024-06-27 16:57:40.761 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 16:57:40.761 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 16:57:40.761 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 16:57:40.977 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 16:57:40.992 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-06-27 16:57:41.150 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 16:57:41.151 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:57:41.151 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 16:57:41.151 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 16:57:41.182 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 16:57:41.182 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 418 ms
+2024-06-27 16:57:41.217 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 16:57:41.222 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Starting...
+2024-06-27 16:57:41.247 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Start completed.
+2024-06-27 16:57:41.248 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 16:57:41.309 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 16:57:41.309 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 16:57:41.389 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 16:57:41.553 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 16:57:41.593 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 16:57:41.610 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3887966f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3abe8745, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e2d7565, org.springframework.security.web.header.HeaderWriterFilter@3c922e85, org.springframework.security.web.authentication.logout.LogoutFilter@1c906f4a, com.luxtavern.security.JWTAuthenticationFilter@71937d8b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2dd2e460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60ad025e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4de6fec8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f3b00cb, org.springframework.security.web.session.SessionManagementFilter@1eae560a, org.springframework.security.web.access.ExceptionTranslationFilter@432fb22c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58b5a8b9]
+2024-06-27 16:57:41.637 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 16:57:41.710 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 16:57:41.714 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 16:57:41.714 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 16:57:41.715 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 16:57:41.717 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 16:57:41.791 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.072 seconds (JVM running for 29290.606)
+2024-06-27 16:57:41.793 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 16:57:47.838 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 16:57:47.839 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-27 16:57:47.841 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-27 16:57:47.843 [http-nio-9090-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Path cannot be resolved to a type
+	Paths cannot be resolved
+	uploadDirectory cannot be resolved to a variable
+	Files cannot be resolved
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	Path cannot be resolved to a type
+	Paths cannot be resolved
+	uploadDirectory cannot be resolved to a variable
+	Files cannot be resolved
+
+	at com.luxtavern.serviceimpl.PdfServiceIMPL.createPdf(PdfServiceIMPL.java:92)
+	at com.luxtavern.controller.PdfController.createPdf(PdfController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.luxtavern.security.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-27 17:00:46.088 [Thread-182] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 17:00:46.114 [Thread-182] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Shutdown initiated...
+2024-06-27 17:00:46.137 [Thread-182] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Shutdown completed.
+2024-06-27 17:00:46.358 [restartedMain] INFO  com.luxtavern.DemoApplication - Starting DemoApplication using Java 17 on RAVIDESKTOP-PQFLAFL with PID 14484 (F:\myprojects\New folder\InManagement\target\classes started by RAVIKIRAN in F:\myprojects\New folder\InManagement)
+2024-06-27 17:00:46.358 [restartedMain] DEBUG com.luxtavern.DemoApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+2024-06-27 17:00:46.358 [restartedMain] INFO  com.luxtavern.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-27 17:00:47.175 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27 17:00:47.193 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+2024-06-27 17:00:47.337 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-06-27 17:00:47.338 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-27 17:00:47.338 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-27 17:00:47.338 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2024-06-27 17:00:47.362 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-27 17:00:47.362 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1001 ms
+2024-06-27 17:00:47.396 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27 17:00:47.401 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-48 - Starting...
+2024-06-27 17:00:47.430 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-48 - Start completed.
+2024-06-27 17:00:47.431 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-27 17:00:47.506 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-27 17:00:47.506 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 17:00:47.588 [restartedMain] DEBUG c.l.security.JWTAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-06-27 17:00:47.760 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27 17:00:47.787 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-27 17:00:47.811 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@90c78ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dcf8d57, org.springframework.security.web.context.SecurityContextPersistenceFilter@48a4f782, org.springframework.security.web.header.HeaderWriterFilter@428e79b1, org.springframework.security.web.authentication.logout.LogoutFilter@5afd572c, com.luxtavern.security.JWTAuthenticationFilter@15018ba5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@292fcaec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@482da598, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79df0edd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f4bebf1, org.springframework.security.web.session.SessionManagementFilter@365be864, org.springframework.security.web.access.ExceptionTranslationFilter@7d9fa2cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fabada2]
+2024-06-27 17:00:47.843 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-27 17:00:47.907 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-27 17:00:47.913 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-06-27 17:00:47.916 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-06-27 17:00:47.917 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-06-27 17:00:47.921 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-06-27 17:00:48.010 [restartedMain] INFO  com.luxtavern.DemoApplication - Started DemoApplication in 1.728 seconds (JVM running for 29476.825)
+2024-06-27 17:00:48.012 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-27 17:01:26.257 [Thread-186] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27 17:01:26.258 [Thread-186] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-48 - Shutdown initiated...
+2024-06-27 17:01:26.267 [Thread-186] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-48 - Shutdown completed.
