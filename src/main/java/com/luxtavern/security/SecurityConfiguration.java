@@ -41,9 +41,11 @@ public class SecurityConfiguration {
 		    .authorizeRequests()
 		    .antMatchers("/").permitAll()
 		    .antMatchers("/api/auth/**").permitAll()
-		    .antMatchers("/api/admin/**").permitAll()
+		    .antMatchers("/api/admin/**").hasRole("ADMIN")
 		    .antMatchers("/api/email/**").permitAll()
 		    .antMatchers("/api/photo/**").permitAll()
+		    .antMatchers("/api/pdf/**").permitAll()
+		    .antMatchers("/api/category/**").permitAll()
 		    .anyRequest().authenticated()
 		    .and()
 		    .httpBasic();
@@ -60,6 +62,7 @@ public class SecurityConfiguration {
 		
 	}
 	
+	@Bean
 public JWTAuthenticationFilter jwtAuthenticationFilter() {
 	return new JWTAuthenticationFilter();
 }

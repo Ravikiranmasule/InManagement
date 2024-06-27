@@ -49,7 +49,7 @@ public boolean validateToken(String token) {
 		Jwts.parser().setSigningKey(SecurityConstants.JWT_SECRET).parseClaimsJws(token);
 		return true;
 	} catch (Exception e) {
-		throw new AuthenticationCredentialsNotFoundException("incorrect jwt");
+		throw new AuthenticationCredentialsNotFoundException("incorrect jwt",e);
 	}
 }
 }

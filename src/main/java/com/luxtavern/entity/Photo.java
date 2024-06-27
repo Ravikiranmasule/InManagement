@@ -18,42 +18,67 @@ public class Photo {
 	private String photoName;
 	
 	@Lob
-	private byte[] data;
+	private byte[] image;
+	
+	
+	@NotNull
+    private String contentType;
 
-	public long getPhotoId() {
-		return photoId;
-	}
-
-	public void setPhotoId(long photoId) {
-		this.photoId = photoId;
-	}
-
-	public String getPhotoName() {
-		return photoName;
-	}
-
-	public void setPhotoName(String photoName) {
-		this.photoName = photoName;
-	}
-
-	public byte[] getData() {
-		return data;
-	}
-
-	public void setData(byte[] data) {
-		this.data = data;
-	}
-
-	public Photo(long photoId, @NotNull String photoName, byte[] data) {
-		super();
-		this.photoId = photoId;
-		this.photoName = photoName;
-		this.data = data;
-	}
 
 	public Photo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+
+	public Photo(long photoId, @NotNull String photoName, byte[] image, @NotNull String contentType) {
+		super();
+		this.photoId = photoId;
+		this.photoName = photoName;
+		this.image = image;
+		this.contentType = contentType;
+	}
+
+
+	public long getPhotoId() {
+		return photoId;
+	}
+
+
+	public void setPhotoId(long photoId) {
+		this.photoId = photoId;
+	}
+
+
+	public String getPhotoName() {
+		return photoName;
+	}
+
+
+	public void setPhotoName(String photoName) {
+		this.photoName = photoName;
+	}
+
+
+	public byte[] getImage() {
+		return image;
+	}
+
+
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+
+
+	public String getContentType() {
+		return contentType;
+	}
+
+
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
+
+
 
 }
